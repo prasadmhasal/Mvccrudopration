@@ -34,6 +34,30 @@ namespace Mvccrudopration.Controllers
             return Json(data);
         }
 
+        public IActionResult DeleteEmp(int eid)
+        {
+            var data = db.emps.Find(eid);
+            db.emps.Remove(data);
+            db.SaveChanges();
+            return Json("");
+        }
+
+        public IActionResult updateEmp(Emp e) 
+        { 
+            db.emps.Update(e);
+            db.SaveChanges();
+            return Json("");
+
+        }
+      
+        public IActionResult EditEmp(int eid)
+        {
+            var data =  db.emps.Find(eid);
+           
+            return Json(data);
+        }
+
+
 
 
     }

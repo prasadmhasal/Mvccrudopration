@@ -9,15 +9,15 @@
 </button>
 
 <table class="table table-bordered table-hover">
-    <tr>
-
     <thead class="table-dark">
         <th>ID</th>
         <th>Name</th>
         <th>Email</th>
         <th>Salary</th>
+        <th>Delete</th>
+        <th>Edit</th>
     </thead>
-    </tr>
+    
     <tbody id="tabledata">
 
     </tbody>
@@ -33,6 +33,11 @@
             </div>
             <div class="modal-body">
                 <form method="post" id="myform">
+                    <div class="mb-3" id="idemp">
+                        <label for="exampleInputEmail1" class="form-label">Id</label>
+                        <input type="text" class="form-control" name="Id" id="EmpId" aria-describedby="emailHelp">
+
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Name</label>
                         <input type="text" class="form-control" name="Name" id="Name" aria-describedby="emailHelp">
@@ -51,6 +56,7 @@
             <div class="modal-footer">
                 
                 <button type="button" class="btn btn-primary" id="savebtn">Save changes</button>
+                <button type="button" class="btn btn-primary" id="updatebtn">Update changes</button>
             </div>
         </div>
     </div>
