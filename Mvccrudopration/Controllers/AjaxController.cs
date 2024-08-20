@@ -28,6 +28,13 @@ namespace Mvccrudopration.Controllers
         
         }
 
+        public IActionResult GetEmp(Emp e)
+        {
+            var data = db.emps.ToList();
+            return Json(data);
+        }
+
+
 
     }
 }
