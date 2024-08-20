@@ -17,33 +17,32 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post">
+                <form method="post" id="myform">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="Name" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name="Name" id="Name" aria-describedby="emailHelp">
                        
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="Email">
+                        <input type="email" class="form-control" name="Email" id="Email">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Salary</label>
-                        <input type="text" class="form-control" id="Salary">
+                        <input type="text" class="form-control" name="Salary" id="Salary">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 
-                <button type="button" class="btn btn-primary" id="save" >Save changes</button>
+                <button type="button" class="btn btn-primary" id="savebtn">Save changes</button>
             </div>
         </div>
     </div>
 </div>
+<input type="button" value="Tesr" id="test"/>
 
-
-<a href="~/lib/jquery/dist/jquery.min.map"></a>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/js/doc.js"></script>
+@* <script src="~/js/doc.js"></script> *@
+<script src="~/js/ajax.js"></script>
