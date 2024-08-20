@@ -92,6 +92,8 @@ namespace Mvccrudopration.Controllers
         {
             var delete =  db.emps.Find(id);
             db.emps.Remove(delete);
+
+
             db.SaveChanges();
             TempData["deletemsg"] = "Delete successfully !!!";
             return RedirectToAction("Index");
